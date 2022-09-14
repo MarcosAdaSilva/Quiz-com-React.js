@@ -1,10 +1,10 @@
 import Quiz from "../img/quiz.svg";
 
-import "./Welcome.css";
+import "./welcome.css";
 
 const Welcome = () => {
   return (
-    <div id="Welcome">
+    <div id="welcome">
       <h2>Seja bem-vindo</h2>
       <p>Clique no botão abaixo para começar:</p>
       <button>Iniciar</button>
