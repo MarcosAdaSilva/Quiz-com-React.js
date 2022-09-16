@@ -6,8 +6,20 @@ import React from "react";
 const Question = () => {
   const [quizState, dispatch] = useContext(QuizContext);
 
-  console.log(quizState);
-  return <div>Question</div>;
+  const currentQuestion = quizState.questions[quizState.currentQuestion];
+
+  return (
+    <div id="question">
+      <p>
+        Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}
+      </p>
+      <h2>{currentQuestion.question}</h2>
+      <div id="options-container">
+        <p>Opções</p>
+        <button>Continuar</button>
+      </div>
+    </div>
+  );
 };
 
 export default Question;
