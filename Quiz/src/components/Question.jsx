@@ -16,14 +16,11 @@ const Question = () => {
       </p>
       <h2>{currentQuestion.question}</h2>
       <div id="options-container">
-        {currentQuestion.options.map((option) => (
-          <Option option={option} key={option} />
-        ))}
         <p>Opções</p>
-        <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>
-          Continuar
-        </button>
       </div>
+      <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>
+        Continuar
+      </button>
     </div>
   );
 };
