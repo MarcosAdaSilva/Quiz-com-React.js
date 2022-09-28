@@ -5,7 +5,7 @@ import WellDone from "../img/Welldone.svg";
 
 import "./GameOver.css";
 
-function GameOver() {
+const GameOver = () => {
   const [quizState, dispatch] = useContext(QuizContext);
 
   return (
@@ -20,6 +20,6 @@ function GameOver() {
       <button onClick={() => dispatch({ type: "NEW_GAME" })}>Reiniciar</button>
     </div>
   );
-}
+};
 
 export default GameOver;
