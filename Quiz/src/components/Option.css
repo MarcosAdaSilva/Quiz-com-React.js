@@ -7,3 +7,11 @@
   opacity: 0.8;
   transition: 0.4s;
 }
+
+.option:hover {
+  opacity: 1;
+}
+
+#options-container .option p {
+  margin-bottom: 0;
+}
